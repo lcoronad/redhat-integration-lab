@@ -36,7 +36,7 @@ A continuación se describen los pasos para realizar el despliegue de esta ruta 
 
 cd redhat-integration-lab
 
-mvn clean package
+mvn clean package -DskipTests=true
 
 oc login --server=https://{{HOST_CONSOLE_OCP}}}:{{PORT_CONSOLE_OCP}} --username={{USER_OCP}} --password={{PASSWORD_OCP}} --insecure-skip-tls-verify=true
 
