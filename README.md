@@ -8,9 +8,9 @@ Esta ruta de integración expone un servicio Rest que sirve como Gateway hacia o
 
 ## URL
 
-Reemplazar {host_ocp} por el host de ruta generada en el ambiente de OCP desplegado
+Reemplazar {HOST_OCP} por el host de ruta generada en el ambiente de OCP desplegado
 ```
-http://{host_ocp}/api/consultas/consultar-saldo
+http://{HOST_OCP}/api/consultas/consultar-saldo
 ```
 
 ## Request
@@ -19,7 +19,6 @@ http://{host_ocp}/api/consultas/consultar-saldo
 {
     "numeroCuenta": "12222"
 }
-
 ```
 
 ## Response
@@ -29,7 +28,6 @@ http://{host_ocp}/api/consultas/consultar-saldo
     "saldo": 2300000,
     "fecha": "2020-11-18T20:12:57.079+00:00"
 }
-
 ```
 
 ## Pasos de instalación de OCP
