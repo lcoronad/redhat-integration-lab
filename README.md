@@ -92,7 +92,7 @@ oc start-build consulta-saldo-gateway --from-file=target/consulta-saldo-gateway-
 
 > Se actualiza el deployment
 ```
-oc apply -f deployment.yml
+oc apply -f despliegue/deployment.yml
 ```
 
 > Se realiza el deploy
