@@ -8,7 +8,8 @@ Esta ruta de integración expone un servicio Rest que sirve como Gateway hacia o
 
 ## URL
 
-Reemplazar {HOST_OCP} por el host de ruta generada en el ambiente de OCP desplegado
+> Reemplazar {HOST_OCP} por el host de ruta generada en el ambiente de OCP desplegado
+
 ```
 http://{HOST_OCP}/api/consultas/consultar-saldo
 ```
