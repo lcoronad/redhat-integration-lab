@@ -1,4 +1,4 @@
-package co.com.redhat.integration.consultaSaldoGateway.configurator;
+package co.com.redhat.integration.consulta.saldo.gateway.configurator;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,4 +1,4 @@
-package co.com.redhat.integration.consultaSaldoGateway.routes;
+package co.com.redhat.integration.consulta.saldo.gateway.routes;
 
 import org.apache.camel.CamelContext;
 import org.apache.camel.LoggingLevel;

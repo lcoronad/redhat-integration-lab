@@ -1,4 +1,4 @@
-package co.com.redhat.integration.consultaSaldoGateway.configurator;
+package co.com.redhat.integration.consulta.saldo.gateway.configurator;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Controller;

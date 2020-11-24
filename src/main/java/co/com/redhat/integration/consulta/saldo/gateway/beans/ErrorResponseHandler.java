@@ -1,4 +1,4 @@
-package co.com.redhat.integration.consultaSaldoGateway.beans;
+package co.com.redhat.integration.consulta.saldo.gateway.beans;
 
 import java.util.Iterator;
 import java.util.Set;
@@ -10,7 +10,7 @@ import org.apache.camel.Handler;
 import org.apache.camel.component.bean.validator.BeanValidationException;
 import org.springframework.stereotype.Component;
 
-import co.com.redhat.integration.consultaSaldoGateway.model.ErrorResponse;
+import co.com.redhat.integration.consulta.saldo.gateway.model.ErrorResponse;
 
 @Component("errorResponse")
 public class ErrorResponseHandler {

@@ -1,4 +1,4 @@
-package co.com.redhat.integration.consultaSaldoGateway.model;
+package co.com.redhat.integration.consulta.saldo.gateway.model;
 
 import java.math.BigDecimal;
 import java.util.Date;
