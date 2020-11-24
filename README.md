@@ -46,7 +46,7 @@ cd redhat-integration-lab
 mvn clean package -DskipTests=true
 ```
 
-> Autenticarse en OpenShift
+> Autenticarse en OpenShift, se debe reemplazar los siguientes campos **{{HOST_CONSOLE_OCP}}}**, **{{PORT_CONSOLE_OCP}}**, **{{USER_OCP}}**, **{{PASSWORD_OCP}}**
 ```
 oc login --server=https://{{HOST_CONSOLE_OCP}}}:{{PORT_CONSOLE_OCP}} --username={{USER_OCP}} --password={{PASSWORD_OCP}} --insecure-skip-tls-verify=true
 ```
