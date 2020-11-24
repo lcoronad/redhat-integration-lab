@@ -36,7 +36,6 @@ http://{HOST_OCP}/api/consultas/consultar-saldo
 A continuación se describen los pasos para realizar el despliegue de esta ruta de integración en un ambiente de OCP 3.11 o 4.x, una vez se haya clonado este repositorio
 
 > Ubicarse en el proyecto
-
 ```
 cd redhat-integration-lab
 ```
@@ -89,6 +88,11 @@ oc expose dc consulta-saldo-gateway --port 8080 -n integration-services-lab
 > Se inicia el build enviando el jar generado
 ```
 oc start-build consulta-saldo-gateway --from-file=target/consulta-saldo-gateway-1.0.0.jar --wait=true -n integration-services-lab
+```
+
+> Se actualiza el deployment
+```
+oc apply -f deployment.yml
 ```
 
 > Se realiza el deploy
