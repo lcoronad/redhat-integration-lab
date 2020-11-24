@@ -106,7 +106,7 @@ oc expose svc consulta-saldo-gateway -n integration-services-lab
 echo -en "\n\nhttp://$(oc get route consulta-saldo-gateway -o template --template={{.spec.host}} -n integration-services-lab)\n\n"
 ```
 
-> Se consume el servicio con CURL
+> Se consume el servicio con CURL, se debe reemplazar **{{RUTA_PASO_ANTERIOR}}** por la URL que se obtuvo en el paso anterior
 ```
 curl --location --request POST '{{RUTA_PASO_ANTERIOR}}/api/consultas/consultar-saldo' \
 --header 'Content-Type: application/json' \
