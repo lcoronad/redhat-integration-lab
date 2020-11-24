@@ -11,15 +11,13 @@ spec:
     deploymentconfig: consulta-saldo-gateway
   template:
     metadata:
-      annotations:
-        sidecar.istio.io/inject: "true"
       labels:
         app: consulta-saldo-gateway
         deploymentconfig: consulta-saldo-gateway
     spec:
       containers:
         - name: consulta-saldo-gateway
-          image: docker-registry.default.svc:5000/prueba-service-mesh/consulta-saldo-gateway:latest
+          image: docker-registry.default.svc:5000/integration-services-lab/consulta-saldo-gateway:latest
           env:
             - name: SPRING_APPLICATION_JSON
               value: '{"server":{"undertow":{"io-threads":10, "worker-threads":20 }}}'
