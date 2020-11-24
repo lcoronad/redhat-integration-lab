@@ -90,6 +90,11 @@ oc expose dc consulta-saldo-gateway --port 8080 -n integration-services-lab
 oc start-build consulta-saldo-gateway --from-file=target/consulta-saldo-gateway-1.0.0.jar --wait=true -n integration-services-lab
 ```
 
+> Se actualiza la versión de la nueva imagen generada, se debe reemplazar **{{VERSION_APP}}** por la versión del artefacto en el pom.xml
+```
+oc tag consulta-saldo-gateway:latest consulta-saldo-gateway:{{VERSION_APP}} -n integration-services-lab
+```
+
 > Se actualiza el deployment
 ```
 oc apply -f despliegue/deployment.yml
