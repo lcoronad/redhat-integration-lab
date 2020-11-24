@@ -96,7 +96,7 @@ oc start-build consulta-saldo-gateway --from-file=target/consulta-saldo-gateway-
 oc rollout latest dc/consulta-saldo-gateway -n integration-services-lab
 ```
 
-> Se exponse la ruta
+> Se expone la ruta
 ```
 oc expose svc consulta-saldo-gateway -n integration-services-lab
 ```
