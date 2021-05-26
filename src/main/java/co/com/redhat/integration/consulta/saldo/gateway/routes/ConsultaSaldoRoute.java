@@ -41,7 +41,7 @@ public class ConsultaSaldoRoute extends RouteBuilder {
         
         //Ruta principal
         from("direct:consulta-saldo")
-	        	.log(LoggingLevel.INFO, logger, MESSAGE_LOG + "Inicia ruta consulta-saldo")
+	        	.log(LoggingLevel.INFO, logger, MESSAGE_LOG + "Inicia ruta consulta-saldo version 1.1")
 		    //Convierte el JSON a objeto
 	        .marshal().json(JsonLibrary.Jackson)
 	        	.log(LoggingLevel.DEBUG, logger, MESSAGE_LOG + "URL del servicio a consumir: {{ws.endpoint.consultar-saldo}}")
