@@ -7,7 +7,7 @@
 
 	<groupId>co.com.redhat.integration</groupId>
 	<artifactId>consulta-saldo-gateway</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 
 	<name>Integration :: Spring-Boot :: Camel</name>
 	<description>Spring Boot example running a Camel route connecting to a Rest Service</description>
